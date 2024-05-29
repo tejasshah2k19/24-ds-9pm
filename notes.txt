@@ -1,0 +1,117 @@
+C , C++ , Java , Python 
+
+DS 
+
+
+10
+30
+------
+
+40
+
+5 line code->5 instruction -> 2 second -> 5MB 
+
+1000 users -> 
+
+5000 instructions -> 5MB*1000 : 5000MB 
+
+
+DS
+    1) time complexity 
+         time taken : 
+                    total instructions executed 
+    2) space complexity :
+                    total memory 
+
+
+
+int main(){
+
+    for(i=1;i<=5;i++){
+        printf("Hi ");
+        //
+        //
+    }
+
+}
+
+
+ALGO :-  
+
+
+                                        DS 
+            Linear DS                                               Non Linear DS 
+    Array                                                               Tree
+    Stack                                                               Graph 
+    Queue 
+    LinkedList                   
+
+
+    searching 
+        1) linear 
+        2) binary
+    sorting
+        1) bubble  
+        2) selection
+        3) insertion 
+        4) merge sort
+        5) quick sort  
+
+------------------------------------------------------------------------------------
+
+
+time complexity***
+space complexity 
+
+10 second -> 5 second 
+
+
+
+resources -> 
+
+---------------------------------------------------------------------------
+
+
+1) best case 
+2) avg case 
+3) worst case*** 
+
+
+
+8 numbers-> 
+10  15  2   20  25  63  22  14
+
+
+10 numbers-> 
+10  15  2   20  25  63  22  14  50 70 
+start 
+
+search : 10 :  1 
+search : 2  :  3 
+search : 25 :  5 
+search : 100 : 10  {n time} {size}
+
+
+
+Notation :- Symbol :- 
+
+
+
+1) best case      : Big Omega 
+2) avg case       : Big Theta 
+3) worst case***  : Big O 
+
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
