@@ -103,9 +103,41 @@ Notation :- Symbol :-
 
 
 ------------------------------------------------------------------
+array 
+
+function 
+
+struct 
+-------------------------------------------------------------------
+
+array -> 
+
+    what is an array  ? 
+        array is collection of same type of data 
+        under the one data name we can store n numbers of items 
+        continueous manner 
+        you can access elements of the array using index 
+        index will start from 0 and ends with SIZE-1 
+
+    int a; //i can store a single value 
+    a = 10; 
 
 
 
+    a = 100; //10 over write
+    printf(" %d",a); //100           
+
+
+    int a[10];
+
+    //a[0]  a[1] a[2] ..... a[9]
+
+    //0 1 2 3 4 5 ------ 9 ==> index 
+    //index is alos known as --> subscript 
+
+    [] => 1 dimension -> single line-> 
+    [][] => 2 dimension -> matrix 
+    [][][] => multidimension -> 3D 
 
 
 
