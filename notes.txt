@@ -140,6 +140,74 @@ array ->
     [][][] => multidimension -> 3D 
 
 
+------------------------------------------------------------------------------------
+
+
+
+function -> 
+
+
+
+        max function find out the max value from a and b 
+        a and b is the parameter of the max function. 
+        max function will print who is max from a and b. 
+
+
+        
+
+--------------------------------------------------------------------------
+
+
+stack 
+    LiFo -> Last In First Out 
+
+
+    1)whatsapp -> chat -> msg 
+
+    T 11 -> hi 
+
+    D 11.15 -> hi 
+
+    D T 
+
+    2) email 
+
+    3) call-history   
+
+    4) stack of plate 
+
+    5) gallery 
+
+--------------------------------------------------------------------------------
+
+
+add:10
+add:20
+add:30
+
+display
+30
+20
+10
+
+add:40
+40
+30
+20
+10
+
+
+array*** 
+
+
+
+
+
+
+
+
+
+
 
 
 
