@@ -223,6 +223,22 @@ in which operation we will do top++?
 PUSH(10)
 
 ----------------------------------------------
+StackCharRev.c 
+
+take a string from user and reverse it. 
+
+
+royal 
+
+PUSH('r')
+PUSH('o')
+PUSH('y')
+PUSH('a')
+PUSH('l')
+
+display() -> layor 
+
+---------------------------------------------------
 
 
 
