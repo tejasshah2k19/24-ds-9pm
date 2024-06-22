@@ -199,6 +199,31 @@ add:40
 
 array*** 
 
+--------------
+_push()_____ function is used to add data in stack?
+
+_pop()_____ function is used to remove data 
+from stack? 
+
+
+___top___ pointer/indicator we will use to manage stack?
+   
+
+______ condition is used to identify that 
+stack is full? 
+top == size-1 
+
+
+
+_top == -1______ condition is used to identify that 
+stack is EMPTY?
+
+
+in which operation we will do top++? 
+PUSH(10)
+
+----------------------------------------------
+
 
 
 
