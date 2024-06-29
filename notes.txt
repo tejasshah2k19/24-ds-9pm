@@ -239,13 +239,24 @@ PUSH('l')
 display() -> layor 
 
 ---------------------------------------------------
+1)Linear Search 
+2)binary Search 
+
+search : Linear 
+
+array : [10,20,30,40,50,60,70,80,90,100]   
+
+SIZE : 10 
 
 
+enter search num: 
+11 
+Not Found 
 
 
-
-
-
+enter search num: 
+70 
+Found 
 
 
 
