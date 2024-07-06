@@ -279,7 +279,22 @@ merge sort
 quick sort 
 
 ---------------------------------------------------------------
+linear search : O(n) 
+binary search : log(n)
 
+stack : PUSH top++  O(1) constant 
+        POP  top--  O(1)
+
+-----------------------------------------------------------------
+
+SORTING :- 
+
+array : 55 87 65 43 45 67 89 76 54 33 45 67
+    sorting
+ASC smaller to larger 
+DSC larger to smaller 
+
+bubble sort -> 
 
 
 
