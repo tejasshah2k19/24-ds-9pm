@@ -299,6 +299,15 @@ bubble sort ->
 
 
 
+selection sort -> 
+
+array : 55 87 65 43 45 67 89  
+        i  j 
+        min 
+            min 
+43  45  55  65  87  67  89 
+            i   j
+
 
 
 

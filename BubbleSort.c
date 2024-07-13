@@ -6,9 +6,11 @@ void bubbleSort(int array[], int size)
 
     // 0 1 2 3 4
     //       j
-    for (i = 0; i < size; i++)
+
+    //O(n^2)
+    for (i = 0; i < size; i++) //size time 
     {
-        for (j = 0; j < size - 1; j++)
+        for (j = 0; j < size - 1; j++) //size time 
         {
             if (array[j] > array[j + 1])
             {
@@ -35,3 +37,12 @@ int main()
     printf("\nArray After Sorting\n");
     display(arr, 10);
 }
+
+
+// n = 10;//100 -> N*N -> n^2 ->  
+// for(i=1;i<=n;i++){//n=3 
+//     for(j=1;j<=n;j++){
+//         printf("hi");
+//     }
+// }
+//
