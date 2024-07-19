@@ -1,4 +1,5 @@
 #include <stdio.h>
+void display(int arr[], int size);
 
 void selectionSort(int array[], int size)
 {
@@ -20,6 +21,9 @@ void selectionSort(int array[], int size)
         tmp = array[i];
         array[i] = array[min];
         array[min] = tmp;
+        printf("\nPass %d : ",i+1);
+        display(array,size);
+
     }
 }
 
@@ -32,12 +36,14 @@ void display(int arr[], int size)
 int main()
 {
 
-    int arr[] = {25, 14, 85, 74, 96, 36, 45, 65, 44, 11};
+    // int arr[] = {25, 14, 85, 74, 96, 36, 45, 65, 44, 11};
+    int arr[] = {25, 14, 85, 74, 96};
+
     printf("\nArray Before Sorting\n");
-    display(arr, 10);
-    selectionSort(arr, 10);
+    display(arr, 5);
+    selectionSort(arr, 5);
     printf("\nArray After Sorting\n");
-    display(arr, 10);
+    display(arr, 5);
 }
 
 // n = 10;//100 -> N*N -> n^2 ->

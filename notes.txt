@@ -310,6 +310,81 @@ array : 55 87 65 43 45 67 89
 
 
 
+selection 
+bubble 
+
+insertion sort -> 
+
+
+array : 55 87 65 43 45 67 89  
+    
+
+direction -> left to right 
+             right to left -> current element -> small -> stop 
+                                              -> big -> +1 index shift -> overwrite 
+
+
+55 87 65 43 45 67 89 
+
+
+
+ current = 89
+
+
+43 45 55 65 67 87 89
+
+
+----------------------------------
+85 47 62 14 3 25  19  9 55 
+-----------------------------------
+
+
+current=47 
+47 85 62 14 3 25  19  9 55 
+    
+
+current=62 
+47 62 85 14 3 25  19  9 55 
+      j  i
+
+current=14 
+14 47 62 85 3 25  19  9 55 
+
+current=3 
+3 14 47 62 85 25  19  9 55 
+
+current=25
+3 14 25 47 62 85  19  9 55 
+
+
+
+current=19************
+3 14 25 47 62 85  19  9 55 
+
+
+
+-----------------------------------------------------
+
+
+j
+   43 55 65 87 45 67 89 
+         i 
+   current=43 
+   j=i-1 
+
+    if a[j] > current:
+        a[j+1] = a[j]
+
+    else 
+        break 
+
+    a[j+1] = current    
+
+i++ 
+
+
+
+
 
 
 
