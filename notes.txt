@@ -400,6 +400,95 @@ recursion =>
 
 =-----------------------------------------------------------------------------
 
+two num addition -> 2 variable 
+
+10 number addition -> array 
+    collection n numbers of item with same type of data 
+
+
+Amazon-> 
+    productName ->char[]
+    price  -> int 
+    productId -> int 
+    qty -> int 
+    category -> char[] 
+    structure => collection of n numbres of items with different type of data 
+
+
+struct product{
+    char productName[20];
+    char category[20];
+    int productId;
+    int qty;
+    int price; 
+};
+
+struct product p1;  
+
+
+    0. Exit 
+    1. Add Product 
+    2. List All Products 
+    3. Search Product By Category {linear search} 
+    4. Search Product By Id       {binary searc }
+    
+    MAX 10 Products 
+
+    add product 
+    how many products you want to enter 
+    3
+
+
+
+---------------------------------------------------------------------------------------
+array -> random -> index
+
+stack -> LiFo -> Last in First Out 
+        1) gallery
+        2) whatsapp msg 
+        3) history 
+
+Queue -> FiFo -> First In First Out 
+        1) printer print 
+        2) checkout 
+
+        Type :
+            1) simple queue 
+            2) circular queue 
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
