@@ -458,6 +458,13 @@ Queue -> FiFo -> First In First Out
             
 
 
+0   1   2   3   4   
+        30  40  50
+        f       r
+
+empty -> 0 
+
+empty -> 2 
 
 
 
