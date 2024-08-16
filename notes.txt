@@ -465,10 +465,97 @@ Queue -> FiFo -> First In First Out
 empty -> 0 
 
 empty -> 2 
+----------------------------------------------------------------------------
+
+
+DMA -> dynamic memory allocation
+
+
+int a; //4 byte 
+
+int x[5]; // array -> 20 byte 
+
+
+
+int main(){
+
+    int x; //4 byte 
+    int num[5]; // 20 byte 
+
+
+
+    //4 byte -> not required 
+    //nun -> X 
 
 
 
 
+
+    //
+    return 0; 
+}//finish 
+
+
+
+
+
+int main(){
+
+    int num[5]; // 20 byte -> 5 elements 
+
+    7 elements ? -> overflow  
+
+}
+
+
+
+int main(){
+
+    int num[5]; // 20 byte -> 5 elements 
+
+    2 elements ! --> 3 -> no 
+ 
+}
+
+SMA -> declare -> memory allocated -> 
+    SMA -> release -> scope -> function(){}
+    SMA -> fix size -> grow , shrink
+
+
+DMA -> 
+
+--------------------------------------------------------------------------------------
+
+memory allocation ->
+                    calloc() 
+                    malloc() 
+
+memory release  -> free()
+
+resize -> realloc()
+
+header? 
+        stdlib.h 
+---------------------------------------------------------------------------------        
+
+calloc -> same size block multiple qty 
+malloc -> block  
+
+int a[5]; // calloc 
+
+
+int a; // malloc 
+
+***********
+
+malloc -> heap -> virtual address -> faster 
+calloc -> page -> physical address 
+
+
+
+m:memory allocation
+c: contiguous  
+***********
 
 
 
