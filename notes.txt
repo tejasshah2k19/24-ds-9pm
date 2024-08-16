@@ -561,9 +561,40 @@ c: contiguous
 
 
 
+int *p; 
+
+p = malloc(sizeof(int)); 
+    //TC GCC {old}
+p = (int*)malloc(sizeof(int)); 
+
+
+char *c;
+c = (char*)malloc(sizeof(char)); 
+
+float *t;
+t = (float*)malloc(sizeof(float)); 
 
 
 
+
+why  ? 
+
+    malloc() return type ?
+    int , char , float ,double ? 
+
+    generic pointer -> void pointer -> 
+    void* 
+
+------------------------------------------------------------------------
+
+ask size of an array from user -> scan data in array -> 
+    1)find out max from an array
+    2)find out sum of all elements in an array
+
+-------------------------------------------------------------------------
+
+
+struct -> 
 
 
 
