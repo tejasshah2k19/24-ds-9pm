@@ -597,24 +597,39 @@ ask size of an array from user -> scan data in array ->
 struct -> 
 
 
+-------------------------------------------------------------------------
+
+
+DMA 
+    calloc 
+    malloc 
+
+    free 
+
+    realloc -> resize +  -  
+
+    stdlib.h 
+
+---------------------------------------------------------------------------------
 
 
 
+Linear DS -> LinkedList -> dynamic list -> {} 
+
+        n number of items 
+        dynamic memory allocation 
 
 
+        when you want you allocate memory and use it 
+        when you dont want just release it 
 
 
+        20 30 40 50 -> allocation 
+
+        display -> 20 30 40 50 
 
 
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------
 
 
 
