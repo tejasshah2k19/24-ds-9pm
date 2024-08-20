@@ -48,6 +48,32 @@ void addNodeeBeg(int num)
     }
 }
 
+void addNodeAny(int source, int num)
+{
+    // source: 30
+    // num : 35
+    struct node *p;
+    struct node *tmp;
+
+    for (p = head; p != NULL; p = p->next)
+    {
+        if (p->data == source)
+        {
+            break;
+        }
+    }
+    if (p != NULL)
+    {
+        tmp = malloc(sizeof(struct node));
+        tmp->data = num;
+        tmp->next = p->next;
+        p->next = tmp;
+    }
+    else
+    {
+        printf("\nInvalid Source");
+    }
+}
 void deleteNodeLast()
 {
     struct node *p;
@@ -58,6 +84,14 @@ void deleteNodeLast()
     p->next = NULL;
     free(last);
     last = p;
+}
+
+void deleteNodeBeg()
+{
+    struct node *p;
+    p = head;
+    head = head->next;
+    free(p);
 }
 
 void display()
@@ -75,7 +109,7 @@ int main()
     // max()
     // search(10); found
     // search(100); not found
-    int choice;
+    int choice,source;
     int num;
     while (101)
     {
@@ -111,6 +145,16 @@ int main()
             addNodeeBeg(num);
         case 4:
             deleteNodeLast();
+            break;
+        case 5:
+            deleteNodeBeg();
+            break;
+        case 3:
+            printf("\nEnter the source : ");
+            scanf("%d",&source);
+            printf("\nEnter number : ");
+            scanf("%d",&num);
+            addNodeAny(source,num);
             break;
         default:
             break;
