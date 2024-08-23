@@ -94,6 +94,40 @@ void deleteNodeBeg()
     free(p);
 }
 
+void deleteAny(int key)
+{
+
+    struct node *p;
+    struct node *q;
+    for (p = head; p != NULL; p = p->next)
+    {
+        if (p->next->data == key)
+        {
+            break;
+        }
+    }
+    if (p == NULL)
+    {
+        printf("\nInvalid Source");
+    }
+    else if (p == head)
+    {
+        // beg
+        deleteNodeBeg();
+    }
+    else if (p == last)
+    {
+        deleteNodeLast();
+    }
+    else
+    {
+        // delete any
+        q = p->next;
+        p->next = q->next;
+        free(q);
+    }
+}
+
 void display()
 {
     struct node *i;
@@ -109,7 +143,7 @@ int main()
     // max()
     // search(10); found
     // search(100); not found
-    int choice,source;
+    int choice, source;
     int num;
     while (101)
     {
@@ -151,10 +185,15 @@ int main()
             break;
         case 3:
             printf("\nEnter the source : ");
-            scanf("%d",&source);
+            scanf("%d", &source);
             printf("\nEnter number : ");
-            scanf("%d",&num);
-            addNodeAny(source,num);
+            scanf("%d", &num);
+            addNodeAny(source, num);
+            break;
+        case 6:
+            printf("\nEnter the source : ");
+            scanf("%d", &source);
+            deleteAny(source);
             break;
         default:
             break;
