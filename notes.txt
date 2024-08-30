@@ -631,8 +631,19 @@ Linear DS -> LinkedList -> dynamic list -> {}
 
 ----------------------------------------------------------------------------------
 
+Dobule LinkedList -> 
+    travesal 
+    cost 
+    speed 
+
+    reverse display 
+
+    deletion easy 
+
+    undo/redo -> double linked list 
 
 
+----------------------------------------------------------------------------------
 
 
 
