@@ -201,3 +201,21 @@ int main()
     }
     return 0;
 }
+
+void shift(){
+    struct node *p,*q;
+    int tmp;
+    p=head;
+   
+
+    while(p!=NULL){
+        if(p->next == NULL){
+            break;
+        }
+        q = p->next;
+        tmp = p->data; 
+        p->data = q->data;
+        q->data  = tmp; 
+        p=q->next; 
+    }
+}

@@ -631,11 +631,47 @@ Linear DS -> LinkedList -> dynamic list -> {}
 
 ----------------------------------------------------------------------------------
 
+Dobule LinkedList -> 
+    travesal 
+    cost 
+    speed 
+
+    reverse display 
+
+    deletion easy 
+
+    undo/redo -> double linked list 
+
+
+----------------------------------------------------------------------------------
+
+
+NoN Linear 
+        1) Tree 
+        2) Graph 
 
 
 
+----------------------------------------------------------------------------------
 
 
+Tree -> 
+    node 
+    root 
+    parent node 
+    child node 
+    leaf node 
+    sibling 
+    level : 0
+    height : 1 
+
+    forest => 2+ child -> [ X DS X ] 
+    binary tree => if all the parent node in a tree having min :0 and max : 2 child 
+        min-0 , max - 2 
+
+why forest ? -> graph 
+
+----------------------------------------------------------------------------------
 
 
 
