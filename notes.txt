@@ -673,7 +673,17 @@ why forest ? -> graph
 
 ----------------------------------------------------------------------------------
 
+binarsy tree -> 10   20  15  17  14  8   62  
 
+BST -> binary search tree -> 
+            1) binary tree 
+            2) data > parent -> right {parent->right->big}
+               data < parent -> left {parent -> left ->small } 
+
+    23,45,67,89,87,65,43,10
+
+
+55,45,67,89,09,32,46,78,90,57,16,12,5
 
 
 
