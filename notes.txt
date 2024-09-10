@@ -687,6 +687,13 @@ BST -> binary search tree ->
 
 
 
+----------------------------------------------------
+
+tree travesal -> 
+
+1) InOrder    left-root-right 
+2) PreOrder   root-left-right 
+3) PostOrder  left-right-root 
 
 
 
@@ -694,6 +701,40 @@ BST -> binary search tree ->
 
 
 
+
+
+
+
+
+
+
+a+b*c 
+
+input   stack   postfix 
+a         -     a 
++         +     a     
+b         +     ab  
+*         +*    ab  
+c         +*    abc 
+end             abc*+ 
+
+stack -> operator  < current operator then no issue no pop only push 
+
+
+a*b+c
+
+i/p     stack       postfix 
+a                       a 
+*       *               a 
+b       *               ab 
++       +               ab*
+c                       ab*c 
+END                     ab*c+  
+
+
+stack -> operator  > current operator then pop that higher precedence operator then push the current 
+                     operator 
+                     
 
 
 
