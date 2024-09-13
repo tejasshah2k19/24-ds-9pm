@@ -687,23 +687,13 @@ BST -> binary search tree ->
 
 
 
-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 
 tree travesal -> 
 
 1) InOrder    left-root-right 
 2) PreOrder   root-left-right 
 3) PostOrder  left-right-root 
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -734,7 +724,126 @@ END                     ab*c+
 
 stack -> operator  > current operator then pop that higher precedence operator then push the current 
                      operator 
-                     
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+Infix to postfix conversion 
+    notation 
+reverse polish notation
+
+
+expression => 
+        a+b 
+        a+b*c 
+        a+b*c/d 
+        a+b*c/(d-e) 
+
+expression -> operator [ + - ]
+              operand [data]
+
+priority 
+    ( )   [ left to right ]
+    $ ^ ~ [ right to left ]
+    *  /  [ left to right ]
+    +  -  [ left to right ]
+
+
+Infix   -> a+b
+preFix  -> +ab
+postFix -> ab+
+
+
+Infix   ->  a + b * c
+postfix ->   a + bc*
+        ->  abc*+
+
+Infix ->  a+b*c/d 
+      ->  a  +  bc* / d 
+      ->  a  +  bc*d/      
+      ->  abc*d/+
+
+Infix -> a+b*c/(d-e)
+      -> a + b * c / de-      
+      -> a + bc* / de-
+      -> a + bc*de-/ 
+      -> bc*de-/a+ 
+
+Infix -> a * b $ c $ d
+      -> a * b $ cd$ 
+      -> a * bcd$$ 
+      -> abcd$$* 
+
+
+Infix to Postfix -> using stack 
+
+1) operator PUSH
+2) operand  append output string -> postfix   
+3) stack -> operator  < current operator then no issue no pop only push 
+4) stack -> operator  >= current operator then pop that higher precedence operator then push the current operator
+                [same priority -> pop until same poped out ]
+
+
+Infix   ->  a + b * c
+input       stack       postfix string 
+a                           a 
++            +              a
+b                           ab 
+*            +*             ab         
+c                           abc 
+End of the input 
+                            abc*+
+
+Inifx -> a+b*c/d
+input       stack       postFix string 
+a                       a
++           +           a
+b           +           ab
+*           +*          ab 
+c           +*          abc
+/           +/          abc*
+d           +/          abc*d
+end of input            abc*d/+ 
+
+
+Infix -> a - b - d * e / f + b * c 
+postfix -> ab-de*f/-bc*+
+
+input   Stack   postfix 
+a               a 
+-       -       a
+b       -       ab
+-       -       ab-
+d       -       ab-d 
+*       -*      ab-d
+e       -*      ab-de
+/       -/      ab-de*
+f       -/      ab-de*f
++       +       ab-de*f/-
+b       +       ab-de*f/-b
+*       +*      ab-de*f/-b
+c       +*      ab-de*f/-b 
+end             ab-de*f/-bc*+
+
+
+
+Infix ->      A/B$C+D*E/F-G+H
+postfix ->    ABC$/DE*F/+G-H+ 
+
+
+Infix -> A * (B + C ^ D) / (E - F) + G ^ H / (I + J)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
