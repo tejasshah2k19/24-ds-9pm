@@ -456,6 +456,9 @@ Queue -> FiFo -> First In First Out
             1) simple queue 
             2) circular queue 
             
+Dqueue
+    IRD
+    ORD 
 
 
 0   1   2   3   4   
@@ -833,6 +836,113 @@ postfix ->    ABC$/DE*F/+G-H+
 
 
 Infix -> A * (B + C ^ D) / (E - F) + G ^ H / (I + J)
+
+
+--------------------------------------------------------------
+
+
+Construct a binary tree from the traversals given below:
+In-order : D, B, A, E, G, C, H, F, I
+Pre-order : A, B, D, C, E, G, F, H, I
+
+
+root node ? -> preorder -> 
+preorder -> first node -> root node 
+
+
+who is on the left and on the right of root node? 
+using inorder we can get 
+check your root in the inOrder 
+
+
+which node we need select as left child and right child of root node ?
+again check in the Preorder -> follow the sequence one by one and we get the parent node 
+
+
+InOrder   -> 40 20 50 10 60 30 
+PreOrder  -> 10 20 40 50 30 60 
+
+------------------------------------------------------------------------------------
+
+
+search(root,20); -> found :: return 1
+                 -> not found :: return 0 
+
+
+
+------------------------------------------------------------------------------------
+height balance tree -> AVL Tree  
+
+AVL -> tree -> 1) binary search tree BST 
+               2) Balance Factor of node can be  -1,  0, 1
+
+how to balance it ? 
+imbalance -> balance ? 
+        using rotation technique
+            1) RR imbalance [ Left Rotate  ] 
+            2) LL imbalance [ Right Rotate ] 
+            3) LR imbalance [ Left Rotate - Right Rotate ]
+            4) RL imbalance [ Right Rotate - Left Rotate ]
+
+balance factor = LH - RH
+
+--------------------------------------------------------------------------------
+Queue :- 
+    Double ended queue 
+    Dqueue -> insertion and deletion can be perform on both the side [No FIFO ]
+
+    queue -> insertion -> rear 
+          -> delete   ->  front  
+
+    IRD -> input restricted queue {single side insertion , both the side deletion} 
+    ORD -> output restricted queue {single side deletion , both the side insertion}
+
+    Priority Queue -> 
+        work on the basis of priority -> 
+        data : priority 
+
+        remove -> highest priority element will be removed 
+               -> same Priority -> order wise                         
+
+R O Y A L
+    
+-----------------------------------------------------------------------------      
+
+
+
+AVL:-
+    what is the formula for balance factor? 
+    bf of node = Left Node Height - Right Node Height 
+    bf = LH - RH
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
