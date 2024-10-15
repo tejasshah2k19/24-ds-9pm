@@ -44,6 +44,21 @@ int calculateBF(struct node *root)
     return lh - rh;
 }
 
+struct node* leftRotate(struct node *root){
+    struct node *rr = root->right;
+    root->right = rr->left;//50->right=NULL 
+    rr->left = root; //60->left = 50 
+
+
+    return rr; //60 
+}
+
+struct node* rightRotate(struct node *root){
+    struct node *rl = root->left;//60
+    root->left=rl->right; 
+    rl->right = root;
+    return rl; 
+}
 struct node *addNode(struct node *root, int data) // 50,10  | 40,10 | NULL,10
 {
     if (root == NULL)
@@ -78,6 +93,7 @@ struct node *addNode(struct node *root, int data) // 50,10  | 40,10 | NULL,10
             if (data > root->right->data)
             {
                 printf("\nRIGHT");
+                root = leftRotate(root);//50=>60
             }
             else
             {
@@ -91,6 +107,7 @@ struct node *addNode(struct node *root, int data) // 50,10  | 40,10 | NULL,10
             if (data < root->left->data)
             {
                 printf("\nLEFT");
+                root = rightRotate(root);
             }
             else
             {
@@ -136,16 +153,20 @@ int main()
 {
     struct node *root = NULL;
     // RR
-    // root = addNode(root, 50);
-    // root = addNode(root, 60);
-    // root = addNode(root, 70);
+    root = addNode(root, 70);
+    root = addNode(root, 80);
+    root = addNode(root, 40);
+    root = addNode(root, 75);
+    root = addNode(root, 90);
+    root = addNode(root, 100);
 
-
+   
     //LL
     // root = addNode(root, 70);
     // root = addNode(root, 60);
     // root = addNode(root, 50);
 
+    
 
     //RL
     // root = addNode(root, 50);
@@ -159,7 +180,9 @@ int main()
     // root = addNode(root, 50);
     // root = addNode(root, 60);
 
-    // inOrder(root);
+     printf("\n%d\n",root->data);
+
+    inOrder(root);
 
     return 0;
 }
