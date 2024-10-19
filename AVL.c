@@ -98,6 +98,8 @@ struct node *addNode(struct node *root, int data) // 50,10  | 40,10 | NULL,10
             else
             {
                 printf("\nLEFT");
+                //rightRoate
+                //leftRotate 
             }
         }
         else
@@ -112,6 +114,8 @@ struct node *addNode(struct node *root, int data) // 50,10  | 40,10 | NULL,10
             else
             {
                 printf("\nRIGHT");
+                //leftRotate
+                //rightRotate 
             }
         }
     }
