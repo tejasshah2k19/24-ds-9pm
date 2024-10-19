@@ -917,7 +917,28 @@ AVL:-
   
 
 
+---------------------------------
 
+Graph :
+    vertex
+    edges 
+    diagrap 
+    directed graph 
+    mutligraph
+    parellal edges 
+    loop
+    weighted graph
+    connected graph 
+    disconnected graph
+    isolated graph 
+    pendant 
+
+
+    graph representation-> 
+        1) matrix representation 
+        2) linked representation 
+
+ ---------------------------------------------       
 
 
 
