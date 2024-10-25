@@ -940,9 +940,21 @@ Graph :
 
  ---------------------------------------------       
 
+src     dest        cost 
 
+-----------------------------------------------
 
+graph -> DFS BFS 
 
+BFS -> breadth first search -> traversal algo 
+
+node -> start -> initial node -> double circle -> 
+
+we will visit a visited node-vertex
+
+no cycle 
+
+-----------------------------------------------
 
 
 
