@@ -44,7 +44,7 @@ void dfs(int s, int visited[])
 
             if (checkForVisit(d, visited) == 1)
             {
-                printf("\n New Visit :  %d ", d);
+                printf("\n New Visit :  %d ", d);//9 
                 visitCount++;
                 visited[visitCount] = d;
                 s = d;//3 9
